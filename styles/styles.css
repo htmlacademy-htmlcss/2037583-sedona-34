@@ -52,7 +52,14 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-.index-five-advantages, .search-date {
+.index-five-advantages {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: none;
+}
+.search-date {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -65,12 +72,15 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-.advantages-number, .advantages-description {
+.advantages-number {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
 }
 .advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
   color: #333333;
 }
 .blue-background {
@@ -120,4 +130,11 @@ body {
   font-style: normal;
   text-transform: uppercase;
   text-decoration-line: none;
+}
+.hotels-of-sedona {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/hotels/catalog-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
