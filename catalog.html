@@ -3,17 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог гостиниц</title>
-    <link rel="stylesheet" href="styles\styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="catalog-header">
       <nav class="navigation">
+        <a class="navigation-link" href="index.html">
+          <img class="catalog-header-logo" src="images/header/logo.png" width="139" height="70" alt="Логотип сайта городка Седона">
+          </a>
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">
-            <img class="catalog-header-logo" src="images/header/logo.png" width="139" height="70" alt="Логотип сайта городка Седона">
-            </a>
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -45,8 +43,9 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-container main-inner">
         <section class="hotels-of-sedona">
+          <div class="catalog-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -56,9 +55,11 @@
             <a class="breadcrumbs-link breadcrumbs-link-active" href="#">Гостиницы</a>
           </li>
         </ul>
-        <h2 class="visually-hidden">Фильтры</h2>
+          </div>
+      <div class="hotel-filter-container">
+        <h2 class="visually-hidden" hidden>Фильтры</h2>
         <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="hotel-filter-group">
+          <fieldset class="hotel-filter-group filter-infrastucture">
             <legend class="hotel-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -81,7 +82,7 @@
           </li>
             </ul>
           </fieldset>
-          <fieldset class="hotel-filter-group">
+          <fieldset class="hotel-filter-group filter-type">
           <legend class="hotel-filter-title">Тип Жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -104,12 +105,14 @@
             </li>
           </ul>
         </fieldset>
-      </form>
-    <div class="button-filter-form">
-      <button class="button button-filter-form button-apply" type="submit">Применить</button>
-          <button class="button button-filter-form button-reset" type="submit">Сбросить</button>
+       </form>
+       <div class="button-filter-form">
+       <button class="button button-filter-form button-apply" type="submit">Применить</button>
+       <button class="button button-filter-form button-reset" type="submit">Сбросить</button>
     </div>
+  </div>
   </section>
+  <div class="page-catalog-container">
     <section class="search-results">
       <p class="search-results-hotel">Найдено гостиниц: 38
       </p>
@@ -198,9 +201,10 @@
       <div class="number-hotel-page">
         <p class="hotel-in-page">Гостиниц на странице:</p>
       </div>
+  </div>
       <section class="subscribe-catalog">
         <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscribe-description-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscribe-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
           <label for="form-email-catalog">
           </label>
@@ -210,6 +214,7 @@
         </section>
     </main>
     <footer class="main-footer">
+      <div class="page-footer-container">
       <section class="footer-social">
         <h2 class="page-footer-title visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
@@ -240,6 +245,7 @@
           </address>
         </section>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="logo-html-academy" src="images/footer/html_academy.svg" width="115" height="33" alt="Ссылка на сайт html academy"></a>
-  </footer>
+      </div>
+      </footer>
   </body>
 </html>
