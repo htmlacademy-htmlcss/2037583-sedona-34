@@ -67,6 +67,9 @@ margin-right: 100px;
   background-color: #ffffff;
   text-align: center;
 }
+.catalog-header {
+  margin-left: 70px;
+}
 .main-logo-background {
   color: #000000;
   background-color: #ffffff;
@@ -80,6 +83,10 @@ margin-right: 100px;
 }
 .page-container {
   width: 1200px;
+  margin: 0 auto;
+}
+.page-catalog-container {
+  width: 1055px;
   margin: 0 auto;
 }
 .index-advantages-header {
@@ -166,6 +173,9 @@ margin-right: 100px;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+.subscribe-catalog {
+  text-align: center;
+}
 .button-subscribe {
   color: #ffffff;
   font-size: 20px;
@@ -201,11 +211,21 @@ line-height: 78px;
   font-weight: 400;
   text-decoration: none;
 }
+.hotel-filter-container {
+  display: flex;
+  margin-left: 70px;
+}
 .hotel-filter-title {
 color: #ffffff;
 font-weight: 700;
 font-size: 20px;
 line-height: 26px;
+}
+.filter-infrastucture {
+  width: 151px;
+}
+.filter-type {
+  width: 146px;
 }
 .control-input {
 font-weight: 400;
