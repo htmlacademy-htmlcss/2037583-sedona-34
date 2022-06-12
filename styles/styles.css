@@ -108,6 +108,8 @@ margin-right: 30px;
 }
 .index-logo {
   display: block;
+  padding-top: 51px;
+  padding-bottom: 21px;
   margin: 0 auto;
 }
 .page-container {
@@ -119,19 +121,17 @@ margin-right: 30px;
   margin: 0 auto;
 }
 .index-advantages-header {
+  margin: 0;
+  padding-top: 63px;
+  padding-bottom: 31px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .index-five-advantages {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #333333;
-  text-transform: none;
-}
-.search-date {
+  margin: 0;
+  padding-bottom: 90px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -144,6 +144,7 @@ margin-right: 30px;
   margin: 0;
   padding: 0;
   justify-content: center;
+  list-style-type: none;
 }
 .advantages-item{
   width: 400px;
@@ -152,20 +153,33 @@ margin-right: 30px;
 .advantages-photo-wrapper {
   display: block;
   width: 800px;
-
+}
+.advantages-photo-city, .advantages-photo-bridge {
+  vertical-align: middle;
 }
 .advantages-title {
+  margin: 0;
+  padding-top: 92px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .advantages-number {
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
 }
+.advantages-without-number {
+padding-top: 180px;
+padding-bottom: 30px;
+}
 .advantages-description {
+  margin: 0;
+  margin-left: 85px;
+  margin-right: 85px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
@@ -187,7 +201,20 @@ margin-right: 30px;
   line-height: 36px;
   font-weight: 700;
 }
+.search-interest {
+  margin-top: 91px;
+  margin-bottom: 29px;
+}
+.search-date {
+  margin-bottom: 56px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: none;
+}
 .search-button {
+  margin-bottom: 83px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -195,12 +222,24 @@ margin-right: 30px;
   color: #ffffff;
   background-color: #756157;
 }
+.subscribe-title {
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 29px;
+}
+.subscribe-description {
+  margin: 0;
+  padding-bottom: 46px;
+}
 .subscribe {
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/background-subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+.subscribe-form-index {
+  padding-bottom: 94px;
 }
 .subscribe-catalog {
   text-align: center;
@@ -213,7 +252,26 @@ margin-right: 30px;
   background-color: #82b3d3;
   text-transform: uppercase;
 }
+.footer-social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+list-style-type: none;
+}
+.first-social {
+padding-left: 82px;
+}
+.footer-social-item {
+  padding-right: 30px;
+  padding-top: 58px;
+  padding-bottom: 48px;
+}
 .footer-contacts-address-phone {
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  margin-left: 195px;
+  margin-right: 235px;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
@@ -380,14 +438,8 @@ background-color: #82B3D3;
  max-width: 142px;
  margin-right: auto;
 }
-.footer-contacts {
-  display: block;
-  width: 331px;
-  margin-left: 195px;
-  margin-right: 194px;
-}
 .htmlacademy-link-wrapper {
-  display: block;
-  max-width: 115px;
-  margin-left: auto;
+display: block;
+margin-top: 49px;
+margin-right: 70px;
 }
