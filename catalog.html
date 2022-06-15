@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-container">
     <header class="catalog-header">
       <nav class="navigation">
-        <a class="navigation-link" href="index.html">
+        <a class="navigation-link navigation-logo" href="index.html">
           <img class="catalog-header-logo" src="images/header/logo.png" width="139" height="70" alt="Логотип сайта городка Седона">
           </a>
         <ul class="navigation-list">
@@ -48,7 +49,7 @@
           <div class="catalog-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
+          <li class="breadcrumbs-item visually-hidden">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
@@ -112,8 +113,8 @@
     </div>
   </div>
   </section>
-  <div class="page-catalog-container">
     <section class="search-results">
+      <div class="search-container">
       <p class="search-results-hotel">Найдено гостиниц: 38
       </p>
       <select class="select-control" aria-label="Сортировка">
@@ -130,6 +131,9 @@
       <a class="button button-list" href="#">
         <span class="visually-hidden">Показать список</span>
       </a>
+    </div>
+    <div class="page-catalog-container">
+    <div class="hotel-container">
       <h2 class="visually-hidden">Список найденных гостиниц</h2>
       <ul class="hotel-list">
         <li class="hotel-card">
@@ -177,6 +181,8 @@
           <p class="hotel-raiting">рейтинг: 5,0</p>
         </li>
         </ul>
+    </div>
+    <div class="pagination-container">
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
@@ -197,11 +203,15 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
-      </section>
       <div class="number-hotel-page">
-        <p class="hotel-in-page">Гостиниц на странице:</p>
+        <span class="hotel-in-page">Гостиниц на странице:</span>
+        <select class="hotel-in-page-select" aria-label="Количество гостиниц на странице">
+<option value="4">4</option>
+        </select>
       </div>
+    </div>
   </div>
+</section>
       <section class="subscribe-catalog">
         <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
         <p class="subscribe-description-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
@@ -218,7 +228,7 @@
       <section class="footer-social">
         <h2 class="page-footer-title visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
-          <li class="footer-social-item">
+          <li class="footer-social-item first-social">
             <a class="button-social" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
               <img class="footer-social-logo" src="images/footer/vk.svg" width="24" height="14" alt="Страница в ВК.ру">
@@ -238,14 +248,14 @@
           </li>
         </ul>
         </section>
-        <section class="footer-contacts">
+          <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <address class="footer-contacts-tel">
             <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
-        </section>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="logo-html-academy" src="images/footer/html_academy.svg" width="115" height="33" alt="Ссылка на сайт html academy"></a>
-      </div>
-      </footer>
+          </section>
+    <div class="htmlacademy-link-wrapper"><a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="logo-html-academy" src="images/footer/html_academy.svg" width="115" height="33" alt="Ссылка на сайт html academy"></a>
+    </div>
+    </div>
+  </footer>
+    </div>
   </body>
 </html>
