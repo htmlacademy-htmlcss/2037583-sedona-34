@@ -26,6 +26,9 @@ body {
   color: #000000;
   background-color: #F2F2F2;
 }
+header {
+  margin-bottom: -5px
+}
 .page-container {
   background-color: #FFFFFF;
   width: 1200px;
@@ -319,11 +322,27 @@ list-style-type: none;
   padding-left: 10px;
 }
 .catalog-filter-list {
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 70px;
   list-style-type: none;
+}
+.catalog-filter-item:not(:last-child) {
+ padding-bottom: 15px;
 }
 .hotel-filter-container {
   display: flex;
+  margin-top: 40px;
   margin-left: 70px;
+}
+.hotel-filter {
+  display: flex;
+  flex-direction: row;
+}
+.hotel-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 .hotel-filter-title {
 color: #ffffff;
@@ -333,6 +352,7 @@ line-height: 26px;
 }
 .filter-infrastucture {
   width: 151px;
+  margin-right: 70px;
 }
 .filter-type {
   width: 146px;
@@ -385,11 +405,27 @@ background-color: #ffffff;
   padding-right: 71px;
 }
 .hotel-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 66px;
+}
+.hotel-card {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 160px 140px;
+  row-gap: 16px;
+
+}
+.hotel-card-image {
+  vertical-align: middle;
 }
 .hotel-card-title {
+margin: 0;
+margin-top: 16px;
 color: #000000;
 font-weight: 700;
 font-size: 24px;
@@ -397,9 +433,11 @@ line-height: 28px;
 text-decoration-line: none;
 }
 .hotel-card-link {
+  grid-column: 1 / -1;
   text-decoration-line: none;
 }
 .hotel-card-type {
+margin: 0;
 font-weight: 400;
 font-size: 18px;
 line-height: 21px;
@@ -418,25 +456,35 @@ line-height: 20px;
 text-transform: uppercase;
 }
 .hotel-button-about {
+padding-top: 12px;
+margin-right: 20px;
+min-height: 37px;
 color: #ffffff;
 background-color: #756157;
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
+text-align: center;
 text-transform: uppercase;
 text-decoration-line: none;
 }
 .hotel-button-favorite {
+  padding-top: 12px;
+  min-height: 37px;
   color: #ffffff;
   background-color: #82B3D3;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   text-decoration-line: none;
 }
 .button-favorite-active {
   background-color: #7DB54F;
+}
+.hotel-raiting {
+  background-color: #F2F2F2;
 }
 .pagination-container {
 display: flex;
