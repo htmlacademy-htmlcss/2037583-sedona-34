@@ -26,6 +26,10 @@ body {
   color: #000000;
   background-color: #F2F2F2;
 }
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
 header {
   margin-bottom: -5px
 }
@@ -79,6 +83,8 @@ margin-left: auto;
   min-height: 22px;
 }
 .navigation-link-user {
+  margin-top: 14px;
+  padding: 9px 15px 9px 15px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -416,8 +422,9 @@ background-color: #ffffff;
 .hotel-card {
   padding: 20px;
   display: grid;
-  grid-template-columns: 160px 140px;
+  grid-template-columns: 140px 140px;
   row-gap: 16px;
+  column-gap: 20px;
 
 }
 .hotel-card-image {
@@ -457,7 +464,6 @@ text-transform: uppercase;
 }
 .hotel-button-about {
 padding-top: 12px;
-margin-right: 20px;
 min-height: 37px;
 color: #ffffff;
 background-color: #756157;
