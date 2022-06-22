@@ -517,7 +517,6 @@ border-radius: 4px;
   grid-template-columns: 140px 140px;
   row-gap: 16px;
   column-gap: 20px;
-
 }
 .hotel-card-image {
   vertical-align: middle;
@@ -548,41 +547,49 @@ color: #333333;
   line-height: 21px;
   color: #333333;
 }
-.hotel-raiting {
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-text-transform: uppercase;
-}
 .hotel-button-about {
-padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 min-height: 37px;
 color: #ffffff;
 background-color: #756157;
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
-text-align: center;
 text-transform: uppercase;
 text-decoration-line: none;
+border-radius: 4px;
 }
 .hotel-button-favorite {
-  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 37px;
   color: #ffffff;
   background-color: #82B3D3;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
   text-decoration-line: none;
+  border-radius: 4px;
 }
 .button-favorite-active {
   background-color: #7DB54F;
 }
 .hotel-raiting {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 37px;
+  font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
   background-color: #F2F2F2;
+  border-radius: 4px;
 }
 .pagination-container {
 display: flex;
@@ -599,11 +606,12 @@ padding-bottom: 25px;
   margin-right: 8px;
 }
 .pagination-link {
-display: block;
+display: flex;
+align-items: center;
+justify-content: center;
 box-sizing: border-box;
 width: 60px;
 height: 60px;
-padding: 12px 23px;
 font-weight: 700;
 font-size: 20px;
 line-height: 36px;
@@ -611,6 +619,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 background-color: #82B3D3;
 text-decoration-line: none;
+border-radius: 4px;
 }
 .pagination-current {
   color: #000000;
@@ -671,4 +680,31 @@ background-color: #82B3D3;
 display: block;
 margin-top: 49px;
 margin-right: 70px;
+}
+.four-stars {
+  background-image: url("../images/hotels/star.svg"),
+  url("../images/hotels/star.svg"),
+  url("../images/hotels/star.svg"),
+  url("../images/hotels/star.svg");
+  background-position: 0px 10px,
+                       24px 10px,
+                       48px 10px,
+                       72px 10px;
+  background-repeat: no-repeat;
+}
+.three-stars {
+  background-image: url("../images/hotels/star.svg"),
+  url("../images/hotels/star.svg"),
+  url("../images/hotels/star.svg");
+  background-position: 0px 10px,
+                       24px 10px,
+                       48px 10px;
+  background-repeat: no-repeat;
+}
+.two-stars {
+  background-image: url("../images/hotels/star.svg"),
+  url("../images/hotels/star.svg");
+  background-position: 0px 10px,
+                       24px 10px;
+  background-repeat: no-repeat;
 }
