@@ -380,18 +380,20 @@ list-style-type: none;
 }
 .breadcrumbs-link {
   display: block;
-  min-width: 16px;
-  min-height: 22px;
   padding-right: 10px;
   color: #ffffff;
   line-height: 21px;
   font-weight: 400;
   text-decoration: none;
 }
+
 .breadcrumbs-link-active {
-  margin-left: 10px;
-  padding-left: 10px;
+  padding-left: 16px;
+  background-image: url("../images/breadcrubs-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
 }
+
 .catalog-filter-list {
   padding: 0;
   margin-top: 30px;
@@ -591,6 +593,34 @@ text-transform: uppercase;
   background-color: #F2F2F2;
   border-radius: 4px;
 }
+.four-stars {
+  background-image: url("../images/hotels/star.svg"),
+  url("../images/hotels/star.svg"),
+  url("../images/hotels/star.svg"),
+  url("../images/hotels/star.svg");
+  background-position: 0px 10px,
+                       24px 10px,
+                       48px 10px,
+                       72px 10px;
+  background-repeat: no-repeat;
+}
+.three-stars {
+  background-image: url("../images/hotels/star.svg"),
+  url("../images/hotels/star.svg"),
+  url("../images/hotels/star.svg");
+  background-position: 0px 10px,
+                       24px 10px,
+                       48px 10px;
+  background-repeat: no-repeat;
+}
+.two-stars {
+  background-image: url("../images/hotels/star.svg"),
+  url("../images/hotels/star.svg");
+  background-position: 0px 10px,
+                       24px 10px;
+  background-repeat: no-repeat;
+}
+
 .pagination-container {
 display: flex;
 padding-top: 30px;
@@ -680,31 +710,4 @@ background-color: #82B3D3;
 display: block;
 margin-top: 49px;
 margin-right: 70px;
-}
-.four-stars {
-  background-image: url("../images/hotels/star.svg"),
-  url("../images/hotels/star.svg"),
-  url("../images/hotels/star.svg"),
-  url("../images/hotels/star.svg");
-  background-position: 0px 10px,
-                       24px 10px,
-                       48px 10px,
-                       72px 10px;
-  background-repeat: no-repeat;
-}
-.three-stars {
-  background-image: url("../images/hotels/star.svg"),
-  url("../images/hotels/star.svg"),
-  url("../images/hotels/star.svg");
-  background-position: 0px 10px,
-                       24px 10px,
-                       48px 10px;
-  background-repeat: no-repeat;
-}
-.two-stars {
-  background-image: url("../images/hotels/star.svg"),
-  url("../images/hotels/star.svg");
-  background-position: 0px 10px,
-                       24px 10px;
-  background-repeat: no-repeat;
 }
