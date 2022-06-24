@@ -764,10 +764,51 @@ color: #FFFFFF;
 background-color: #82B3D3;
 text-decoration-line: none;
 border-radius: 4px;
+border: 1px solid #82B3D3;
+}
+.pagination-link:hover {
+  background-color: #68A2CA;
+  border: 1px solid #82B3D3;
+}
+.pagination-link:focus {
+  background-color: #68A2CA;
+  border: 1px solid #82B3D3;
+}
+.pagination-link:focus-visible {
+  background-color: #68A2CA;
+  border: 1px solid #82B3D3;
+  outline: none;
+}
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+border: 1px solid #82B3D3;
 }
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+  border: none;
+}
+.pagination-current:hover {
+  color: #000000;
+  background-color: #F2F2F2;
+  border: none;
+}
+.pagination-current:focus {
+  color: #000000;
+  background-color: #F2F2F2;
+  border: none;
+}
+.pagination-current:focus-visible {
+  color: #000000;
+  background-color: #F2F2F2;
+  border: none;
+  outline: none;
+}
+.pagination-current:active {
+  color: #000000;
+  background-color: #F2F2F2;
+  border: none;
 }
 .hotel-in-page {
 padding-right: 51px;
