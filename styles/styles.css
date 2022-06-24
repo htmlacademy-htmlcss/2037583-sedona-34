@@ -146,6 +146,10 @@ border-radius: 10px;
 .navigation-link-user:active {
   color: rgba(255, 255, 255, 0.3);
 }
+.navigation-link-user:focus-visible {
+  background-color: #615048;
+  outline: none;
+}
 .navigation-logo {
 display: flex;
 align-items: center;
@@ -332,7 +336,10 @@ padding-bottom: 30px;
   background-color: #82b3d3;
   text-transform: uppercase;
 }
-.button-social:hover .footer-social-logo {
+.button-social {
+  fill: #83B3D3;
+}
+.button-social:hover {
   fill: #68A2CA;
 }
 .button-social:active {
@@ -340,6 +347,10 @@ padding-bottom: 30px;
 }
 .button-social:focus {
   fill: #68A2CA;
+}
+.button-social:focus-visible {
+  fill: #68A2CA;
+  outline: none;
 }
 .footer-social-list {
   display: flex;
@@ -368,6 +379,19 @@ padding-left: 82px;
   font-style: normal;
   text-transform: uppercase;
   text-decoration-line: none;
+}
+.footer-contacts-address-phone:hover {
+  color: #756157;
+}
+.footer-contacts-address-phone:focus {
+  color: #756157;
+}
+.footer-contacts-address-phone:focus-visible {
+  color: #756157;
+  outline: none;
+}
+.footer-contacts-address-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 .inner-header-title {
 margin: 0;
@@ -497,6 +521,10 @@ background-color: #ffffff;
 }
 .button-view:active {
   border: 2px solid #000000;
+}
+.button-view:focus-visible {
+  border: 2px solid #68A2CA;
+  outline: none;
 }
 .button-table {
   background-image: url("../images/hotels/icon-table.svg");
@@ -735,4 +763,18 @@ background-color: #82B3D3;
 display: block;
 margin-top: 49px;
 margin-right: 70px;
+}
+.logo-html-academy:hover {
+  fill: #756157;
+}
+.logo-html-academy:focus {
+  fill: #756157;
+  outline: none;
+}
+.logo-html-academy:focus-visible {
+  fill: #756157;
+  outline: none;
+}
+.logo-html-academy:active {
+fill: rgba(117, 97, 87, 0.3);
 }
