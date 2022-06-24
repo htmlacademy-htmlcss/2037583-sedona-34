@@ -424,6 +424,9 @@ list-style-type: none;
   font-weight: 400;
   text-decoration: none;
 }
+.breadcrumbs-link-index {
+  fill: #ffffff;
+}
 
 .breadcrumbs-link-active {
   padding-left: 16px;
@@ -431,7 +434,23 @@ list-style-type: none;
   background-repeat: no-repeat;
   background-position: 0px 5px;
 }
-
+.breadcrumbs-link:hover {
+  fill: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  }
+  .breadcrumbs-link:focus {
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    }
+    .breadcrumbs-link:focus-visible {
+      fill: #FFFFFF;
+      color: #FFFFFF;
+      outline: none;
+      }
+      .breadcrumbs-link:active {
+        fill: rgba(255, 255, 255, 0.3);
+      color: rgba(255, 255, 255, 0.3);
+      }
 .catalog-filter-list {
   padding: 0;
   margin-top: 30px;
