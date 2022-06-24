@@ -880,3 +880,6 @@ margin-right: 70px;
 .logo-html-academy:active {
 fill: rgba(117, 97, 87, 0.3);
 }
+.hotel-container {
+  border-bottom: 1px solid #E6E6E6;
+}
