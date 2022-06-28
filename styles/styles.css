@@ -303,23 +303,39 @@ line-height: 36px;
   text-transform: none;
 }
 .search-button {
+  width: 574px;
+  min-height: 60px;
   margin-bottom: 83px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+  border-radius: 4px;
   background-color: #756157;
+  border: none;
+}
+.search-button:hover, .search-button:focus, .search-button:focus-visible {
+  background-color: #615048;
+  outline: none;
+}
+.search-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 .subscribe-title {
   margin: 0;
   padding-top: 94px;
   padding-bottom: 29px;
+
 }
 .subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
   margin: 0;
   padding-bottom: 46px;
 }
+
 .subscribe {
   color: #ffffff;
   background-color: #000000;
@@ -327,19 +343,51 @@ line-height: 36px;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-.subscribe-form-index {
+.subscribe-form {
+  display: flex;
+  justify-content: center;
   padding-bottom: 94px;
 }
 .subscribe-catalog {
   text-align: center;
 }
 .button-subscribe {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  min-height: 60px;
   color: #ffffff;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   background-color: #82b3d3;
   text-transform: uppercase;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+}
+.button-subscribe:hover, .button-subscribe:focus, .button-subscribe:focus-visible {
+background-color: #68a2ca;
+outline: none;
+}
+.button-subscribe:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+.form-email {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: rgba( 0, 0, 0, 0.6);
+  width: 600px;
+  min-height: 60px;
+  margin: 0;
+  padding: 0 0 0 22px;
+  background-color: #F2F2F2;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+}
+.form-email:focus-visible, .subscribe-form:focus-visible {
+  outline: none;
 }
 .button-social {
   fill: #83B3D3;
@@ -848,14 +896,7 @@ color: #333333;
 .subscribe-form-catalog {
   margin-bottom: 94px;
 }
-.button-subscribe-catalog {
-font-weight: 700;
-font-size: 20px;
-line-height: 36px;
-text-transform: uppercase;
-color: #FFFFFF;
-background-color: #82B3D3;
-}
+
 .page-footer-container {
   display: flex;
   width: 1200px;
@@ -887,4 +928,7 @@ fill: rgba(117, 97, 87, 0.3);
 }
 .hotel-container {
   border-bottom: 1px solid #E6E6E6;
+}
+.button {
+  cursor: pointer;
 }
