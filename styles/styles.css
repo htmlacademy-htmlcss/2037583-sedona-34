@@ -631,21 +631,75 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   appearance: textfield;
 }
 .range-input-right {
-  border-left: none;
+  border-left: 0px;
   border-radius: 0px 4px 4px 0px;
 }
 .range-input::-webkit-outer-spin-button, .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
+.range-input:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  }
+.range-input:focus, .range-input:focus-visible {
+box-shadow: 0px 0px 0px 3px #81B3D2;
+outline: none;
+}
+.range-input:active {
+  background-color: #756257;
+  }
 .button-filter-form {
+  display: flex;
+  flex-direction: column;
+
 color: #ffffff;
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
 }
 .button-apply {
+  margin-top: 60px;
+  margin-left: 70px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 160px;
+min-height: 48px;
 background-color: #82B3D3;
+text-transform: uppercase;
+border: none;
+border-radius: 4px;
+}
+.button-apply:hover, .button-apply:focus, .button-apply:focus-visible {
+  background-color: #68a2ca;
+  outline: none;
+}
+.button-apply:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+.button-reset {
+  display: flex;
+align-items: center;
+margin-left: 70px;
+width: 160px;
+min-height: 48px;
+font-weight: 400;
+justify-content: end;
+  background: transparent;
+  border: none;
+}
+.button-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+.button-reset:focus, .button-reset:focus-visible {
+  border: 3px solid #83B3D3;
+  justify-content: center;
+  border-radius: 4px;
+outline: none;
+}
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 .search-container {
 display: flex;
