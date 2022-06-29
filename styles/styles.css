@@ -554,12 +554,25 @@ line-height: 26px;
   margin-right: 70px;
 }
 .filter-type {
+  margin-right: 175px;
   width: 146px;
 }
 .control-input {
 font-weight: 400;
 font-size: 18px;
 line-height: 21px;
+}
+.catalog-filter-label {
+  position: relative;
+}
+.min, .max {
+  position: absolute;
+  bottom: 17px;
+  right: 14px;
+  font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+opacity: 0.3;
 }
 .range-scale {
   position: relative;
@@ -597,9 +610,33 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   top: -8px;
   left: 0px;
 }
-.toggle-max {
+.toggle-middle {
   top: -8px;
-  left: 196px;
+  left: 216px;
+}
+.range-wrapper-inputs {
+  display: flex;
+}
+.range-input {
+  width: 110px;
+  margin-top: 34px;
+  padding: 14px 19px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 4px 0px 0px 4px;
+  appearance: textfield;
+}
+.range-input-right {
+  border-left: none;
+  border-radius: 0px 4px 4px 0px;
+}
+.range-input::-webkit-outer-spin-button, .range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 .button-filter-form {
 color: #ffffff;
