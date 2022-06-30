@@ -648,10 +648,46 @@ outline: none;
 .range-input:active {
   background-color: #756257;
   }
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+border-radius: 4px;
+}
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  background-image: url("../images/hotels/checked.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+.control-input[type="checkbox"] + .control-mark:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.control-input[type="checkbox"] + .control-mark:focus {
+border: 3px solid #83B3D3;
+}
+.control-input[type="checkbox"] + .control-mark:focus-visible {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+.control-input[type="checkbox"] + .control-mark:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 .button-filter-form {
   display: flex;
   flex-direction: column;
-
 color: #ffffff;
 font-weight: 700;
 font-size: 16px;
