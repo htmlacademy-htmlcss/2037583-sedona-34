@@ -513,11 +513,14 @@ font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
 }
+.modal-field {
+  margin-top: 62px;
+}
 .modal-close-button {
   position: absolute;
   padding: 0;
   top: 54px;
-  right: 90px;
+  right: 70px;
   width: 53px;
   height: 53px;
   background-color: #F2F2F2;
@@ -543,9 +546,137 @@ background-color: #E6E6E6;
 font-weight: 700;
 font-size: 20px;
 line-height: 26px;
+text-transform: capitalize;
+}
+.field-group {
+  position: relative;
+}
+.field-wrapper {
+  display: grid;
+  grid-template-columns: 155px 370px 50px;
+  grid-template-rows: 50px 40px;
+  align-items: center;
 }
 .search-form-field {
-width: 388px;
+height: 50px;
+padding: 0;
+padding-left: 19px;
+grid-column: 2/4;
+border: none;
+background-color: #F2F2F2;
+border-radius: 4px;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+.search-form-field::placeholder {
+  color: #000000;
+  font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+.search-form-field:hover  {
+  background: #E6E6E6;
+}
+.date-button:hover, .date-button:focus, .date-button:focus-visible, .date-button:active {
+  opacity: 1;
+}
+.search-form-field:focus, .search-form-field:focus-visible {
+  background: #E6E6E6;
+border: 3px solid #83B3D3;
+outline: none;
+}
+.search-form-field:active {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+}
+.date-text {
+  margin: 0;
+  font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+grid-column: 2/3;
+}
+.text-error {
+  color: #FF5757;
+}
+.date-button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-image: url("../images/modal/calendar.svg");
+background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+  opacity: 0.3;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+
+.field-adult-kids {
+  display: flex;
+}
+.field-adult {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 155px 50px 33px 50px;
+  grid-template-rows: 50px;
+}
+.field-number-adult {
+  padding: 0;
+  margin-left: 50px;
+  border: none;
+}
+.field-box {
+  position: relative;
+}
+.field-number {
+  width: 33px;
+  height: 50px;
+  appearance: textfield;
+}
+.field-number:hover {
+  appearance: none;
+}
+ .minus-adult {
+  position: absolute;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+.minus-icon {
+  opacity: 0.3;
+  vertical-align: middle;
+}
+.minus-icon:hover {
+  padding: 12px 6px 12px 6px;
+  opacity: 1;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+.plus-adult {
+  position: absolute;
+  top: 0;
+  left: 83px;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #F2F2F2;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
 }
 .inner-header-title {
 margin: 0;

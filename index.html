@@ -187,30 +187,34 @@
       <div class="modal-field">
       <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="field-group">
-          <label class="field-group-label" for="date-in">Дата Заезда:</label>
+          <div class="field-wrapper">
+          <label class="field-group-label label-date-in" for="date-in">Дата Заезда:</label>
           <input class="search-form-field field" type="text" id="date-in" placeholder="20 апреля 2020">
           <button class="date-button" type="button"><span class="visually-hidden">Календарь</span>
           </button>
-          <p class="date-text">Мы не можем отправить вас в прошлое.</p>
-        </div>
+          <p class="date-text text-error">Мы не можем отправить вас в прошлое.</p></div>
         <div class="field-group">
-          <label class="field-group-label" for="date-out">Дата Выезда:</label>
+          <div class="field-wrapper">
+          <label class="field-group-label label-date-out" for="date-out">Дата Выезда:</label>
           <input class="search-form-field field" type="text" id="date-out" placeholder="1 сентября 2021">
           <button class="date-button" type="button"><span class="visually-hidden">Календарь</span>
           </button>
-          <p class="date-text-out">На эти даты есть свободные номера. Пока есть.</p>
+          <p class="date-text">На эти даты есть свободные номера. Пока есть.</p></div>
         </div>
+      </div>
+      <div class="field-adult-kids">
         <div class="field-adult">
         <label class="field-group-label" for="adult">Взрослые:</label>
-        <span class="field-box">
-          <button class="field-button minus" type="button">
+        <div class="field-box">
+          <button class="field-button minus-adult" type="button">
+            <svg class="minus-icon" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
             <span class="visually-hidden">Минус</span>
           </button>
-          <input class="field-number" id="adult" name="adult" type="number" value="2">
-          <button class="field-button plus" type="button">
+          <input class="field-number field-number-adult" id="adult" name="adult" type="number" value="2">
+          <button class="field-button plus-adult" type="button">
             <span class="visually-hidden">Плюс</span>
           </button>
-        </span>
+        </div>
       </div>
       <div class="field-kids">
         <label class="field-group-label" for="kids">Дети:</label>
@@ -223,7 +227,7 @@
             <span class="visually-hidden">Плюс</span>
           </button>
         </span>
-      </div>
+      </div></div>
       <button class="find-button" type="submit">Найти</button>
       </form>
     </div>
