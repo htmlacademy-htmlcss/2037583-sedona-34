@@ -206,28 +206,40 @@
         <div class="field-adult">
         <label class="field-group-label" for="adult">Взрослые:</label>
         <div class="field-box">
-          <button class="field-button minus-adult" type="button">
+          <button class="minus" type="button">
             <svg class="minus-icon" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
             <span class="visually-hidden">Минус</span>
           </button>
-          <input class="field-number field-number-adult" id="adult" name="adult" type="number" value="2">
-          <button class="field-button plus-adult" type="button">
+          <input class="field-number" id="adult" name="adult" type="number" value="2" disabled>
+          <button class="plus" type="button">
+            <svg class="plus-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
             <span class="visually-hidden">Плюс</span>
           </button>
         </div>
       </div>
       <div class="field-kids">
-        <label class="field-group-label" for="kids">Дети:</label>
-        <span class="field-box">
-          <button class="field-button minus" type="button">
+        <span class="field-group-label-kids">
+        <label class="field-group-label field-group-label-kids label-kids" for="kids">Дети:</label>
+        <span class="tooltip">
+          <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+            <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a"><path d="M0 0h1v9H0z"/></clipPath></defs></svg>
+          </button>
+          <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+        </span>
+      </span>
+        <div class="field-box">
+          <button class="minus" type="button">
+            <svg class="minus-icon" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
             <span class="visually-hidden">Минус</span>
           </button>
-          <input class="field-number" id="kids" name="kids" type="number" value="1">
-          <button class="field-button plus" type="button">
+          <input class="field-number" id="kids" name="kids" type="number" value="1" disabled>
+          <button class="plus" type="button">
+            <svg class="plus-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
             <span class="visually-hidden">Плюс</span>
           </button>
-        </span>
-      </div></div>
+        </div>
+      </div>
+    </div>
       <button class="find-button" type="submit">Найти</button>
       </form>
     </div>

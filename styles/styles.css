@@ -548,6 +548,9 @@ font-size: 20px;
 line-height: 26px;
 text-transform: capitalize;
 }
+.label-kids {
+  margin-left: 56px;
+}
 .field-group {
   position: relative;
 }
@@ -586,7 +589,7 @@ line-height: 21px;
 border: 3px solid #83B3D3;
 outline: none;
 }
-.search-form-field:active {
+.search-form-field:focus:not(:placeholder-shown) {
   background: #FFFFFF;
   border: 2px solid #000000;
 }
@@ -621,6 +624,7 @@ background-color: transparent;
 
 .field-adult-kids {
   display: flex;
+  justify-content: space-between;
 }
 .field-adult {
   display: grid;
@@ -628,23 +632,37 @@ background-color: transparent;
   grid-template-columns: 155px 50px 33px 50px;
   grid-template-rows: 50px;
 }
-.field-number-adult {
-  padding: 0;
-  margin-left: 50px;
-  border: none;
+.field-kids {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 155px 50px 33px 50px;
+  grid-template-rows: 50px;
 }
 .field-box {
   position: relative;
 }
 .field-number {
-  width: 33px;
+  padding: 0;
+  margin-left: 50px;
+  border: none;
+  width: 27px;
   height: 50px;
+  background-color: #F2F2F2;
+ padding-left: 6px;
+ text-align: center;
   appearance: textfield;
 }
-.field-number:hover {
-  appearance: none;
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
- .minus-adult {
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+ .minus {
   position: absolute;
   padding: 0;
   width: 50px;
@@ -656,28 +674,130 @@ background-color: transparent;
 }
 .minus-icon {
   opacity: 0.3;
+  width: 13px;
+  height: 1px;
   vertical-align: middle;
 }
-.minus-icon:hover {
-  padding: 12px 6px 12px 6px;
-  opacity: 1;
+.minus:hover {
+  background-image: url("../images/modal/minus.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 1px;
+  background-position: center;
+ background-color: transparent;
+}
+.minus:focus-visible {
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/modal/minus.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 1px;
+  background-position: center;
+ background-color: transparent;
+  margin: 12px 6px 12px 6px;
   border: 3px solid #83B3D3;
   border-radius: 4px;
+  outline: none;
 }
-.plus-adult {
+.minus:active {
+  background-color: transparent;
+}
+.plus {
+    position: absolute;
+    top: 0;
+    left: 83px;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    background-color: #F2F2F2;
+    cursor: pointer;
+  }
+  .plus-icon {
+    opacity: 0.3;
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+  }
+  .plus:hover {
+    background-image: url("../images/modal/plus.svg");
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+    background-position: center;
+   background-color: transparent;
+  }
+.plus:focus-visible {
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/modal/plus.svg");
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+    background-position: center;
+   background-color: transparent;
+    margin: 12px 6px 12px 6px;
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+    outline: none;
+  }
+  .plus:active {
+    background-color: transparent;
+  }
+  .tooltip {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 6px;
+    width: 16px;
+    height: 16px;
+  }
+  .tooltip-toggle {
+    border: none;
+    background-color: #83B3D3;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  .tooltip-icon {
+    width: 1px;
+    height: 9px;
+    fill: #ffffff;
+    margin: 0 auto;
+    display: block;
+  }
+  .tooltip-toggle:hover .tooltip-icon {
+    color: #AF7842;
+  }
+  .tooltip-text {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 18px 18px 22px;
+    width: 216px;
+    position: absolute;
+  top: 35px;
+  left: 50%;
+  margin-top: 4px;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+  }
+  .tooltip-text::before {
+  content: "";
+  width: 0;
+  height: 0;
   position: absolute;
-  top: 0;
-  left: 83px;
-  padding: 0;
-  width: 50px;
-  height: 50px;
-  border: none;
-  background-color: #F2F2F2;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 0px 4px 4px 0px;
-  cursor: pointer;
-}
+  bottom: 100%;
+  left: 123px;
+  border: 9px solid transparent;
+  border-top-color: #333333;
+transform: scaleY(-1);
+  }
 .inner-header-title {
 margin: 0;
 padding-top: 30px;
