@@ -111,10 +111,9 @@
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-        <form class="subscribe-form-index" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="form-email">
-          </label>
-          <input type="email" id="form-email" name="form-email" placeholder="Ваш e-mail">
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="label-form-email" for="form-email">
+          <input class="form-email" type="email" id="form-email" name="form-email" placeholder="Ваш e-mail"></label>
         <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
         </section>
@@ -175,6 +174,77 @@
       </div>
     </div>
   </footer>
+  </div>
+  <div class="modal-container">
+   <div class="modal modal-auth">
+    <button class="modal-close-button" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    <svg class="close-button" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/>
+    </svg>
+  </button>
+    <section class="modal-content">
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <div class="modal-field">
+      <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="field-group">
+          <div class="field-wrapper">
+          <label class="field-group-label label-date-in" for="date-in">Дата Заезда:</label>
+          <input class="search-form-field field" type="text" id="date-in" placeholder="20 апреля 2020">
+          <button class="date-button" type="button"><span class="visually-hidden">Календарь</span>
+          </button>
+          <p class="date-text text-error">Мы не можем отправить вас в прошлое.</p></div>
+        <div class="field-group">
+          <div class="field-wrapper">
+          <label class="field-group-label label-date-out" for="date-out">Дата Выезда:</label>
+          <input class="search-form-field field" type="text" id="date-out" placeholder="1 сентября 2021">
+          <button class="date-button" type="button"><span class="visually-hidden">Календарь</span>
+          </button>
+          <p class="date-text">На эти даты есть свободные номера. Пока есть.</p></div>
+        </div>
+      </div>
+      <div class="field-adult-kids">
+        <div class="field-adult">
+        <label class="field-group-label" for="adult">Взрослые:</label>
+        <div class="field-box">
+          <button class="minus" type="button">
+            <svg class="minus-icon" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+            <span class="visually-hidden">Минус</span>
+          </button>
+          <input class="field-number" id="adult" name="adult" type="number" value="2" disabled>
+          <button class="plus" type="button">
+            <svg class="plus-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+            <span class="visually-hidden">Плюс</span>
+          </button>
+        </div>
+      </div>
+      <div class="field-kids">
+        <span class="field-group-label-kids">
+        <label class="field-group-label field-group-label-kids label-kids" for="kids">Дети:</label>
+        <span class="tooltip">
+          <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+            <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/></g><defs><clipPath id="a"><path d="M0 0h1v9H0z"/></clipPath></defs></svg>
+          </button>
+          <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+        </span>
+      </span>
+        <div class="field-box">
+          <button class="minus" type="button">
+            <svg class="minus-icon" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+            <span class="visually-hidden">Минус</span>
+          </button>
+          <input class="field-number" id="kids" name="kids" type="number" value="1" disabled>
+          <button class="plus" type="button">
+            <svg class="plus-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+            <span class="visually-hidden">Плюс</span>
+          </button>
+        </div>
+      </div>
+    </div>
+      <button class="find-button" type="submit">Найти</button>
+      </form>
+    </div>
+    </section>
+   </div>
   </div>
   </body>
 </html>
