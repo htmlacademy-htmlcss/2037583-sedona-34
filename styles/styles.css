@@ -412,20 +412,20 @@ outline: none;
   border-radius: 10px 0px 0px 10px;
   border: none;
 }
-.label-form-email:focus-visible, .subscribe-form:focus-visible, .form-email:focus-visible {
-  outline: none;
-}
+
 .form-email:hover {
   background-color: #E6E6E6;
 }
-.form-email:focus, .form-email:focus-visible {
-  background-color: #E6E6E6;
+.form-email:focus-visible {
+background-color: #E6E6E6;
 border: 3px solid #83B3D3;
+outline: none;
 }
-.form-email:active {
+.form-email:active, .form-email:focus:not(:focus-visible), .form-email:focus:not(:placeholder-shown) {
 color: #000000;
 background-color: #FFFFFF;
 border: 2px solid #000000;
+outline: none;
 }
 .button-social {
   fill: #83B3D3;
@@ -766,8 +766,8 @@ input[type="number"]:focus {
     margin: 0 auto;
     display: block;
   }
-  .tooltip-toggle:hover .tooltip-icon {
-    color: #AF7842;
+  .tooltip-toggle:hover, .tooltip-toggle:focus {
+    background-color: #68A2CA;
   }
   .tooltip-text {
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
@@ -798,6 +798,39 @@ input[type="number"]:focus {
   border-top-color: #333333;
 transform: scaleY(-1);
   }
+  .tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text,
+.tooltip-toggle:focus-visible + .tooltip-text {
+  display: block;
+}
+.find-button {
+  margin-top: 43px;
+  margin-left: 22px;
+  width: 575px;
+  padding: 12px 26px 12px 26px;
+  border: none;
+  background-color: #83B3D3;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+text-transform: uppercase;
+}
+.find-button:hover {
+  background-color: #68A2CA;
+}
+.find-button:focus, .find-button:focus-visible {
+background-color: #68A2CA;
+border: 3px solid #756257;
+outline: none;
+}
+.find-button:active {
+color: rgba(255, 255, 255, 0.3);
+background-color: #68A2CA;
+}
 .inner-header-title {
 margin: 0;
 padding-top: 30px;
@@ -977,12 +1010,13 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 .range-input:hover {
   border-color: rgba(255, 255, 255, 0.6);
   }
-.range-input:focus, .range-input:focus-visible {
+.range-input:focus-visible, .range-input:focus {
 box-shadow: 0px 0px 0px 3px #81B3D2;
 outline: none;
 }
-.range-input:active {
+.range-input:focus:not(:placeholder-shown) {
   background-color: #756257;
+  box-shadow: none;
   }
 .control {
   position: relative;
