@@ -587,7 +587,7 @@ header {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display: none;
+  /*display: none;*/
 }
 
 .modal {
@@ -665,7 +665,7 @@ header {
 .field-wrapper {
   display: grid;
   grid-template-columns: 155px 370px 50px;
-  grid-template-rows: 50px 40px;
+  grid-template-rows: 50px 38px;
   align-items: center;
 }
 
@@ -677,9 +677,6 @@ header {
   border: none;
   background-color: #f2f2f2;
   border-radius: 4px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .search-form-field::placeholder {
@@ -687,6 +684,8 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  word-spacing: -3px;
+
 }
 
 .search-form-field:hover {
@@ -714,6 +713,7 @@ header {
 
 .date-text {
   margin: 0;
+  padding-bottom: 5px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -768,12 +768,15 @@ header {
 
 .field-number {
   padding: 0;
+  font-weight: 400;
+font-size: 18px;
+line-height: 21px;
   margin-left: 50px;
   border: none;
-  width: 27px;
+  width: 30px;
   height: 50px;
   background-color: #f2f2f2;
-  padding-left: 6px;
+  padding-left: 1px;
   text-align: center;
   appearance: textfield;
 }
@@ -793,6 +796,7 @@ input[type="number"]:focus {
 .minus {
   position: absolute;
   padding: 0;
+  top: 0;
   width: 50px;
   height: 50px;
   border: none;
@@ -837,7 +841,7 @@ input[type="number"]:focus {
 .plus {
   position: absolute;
   top: 0;
-  left: 83px;
+  left: 81px;
   padding: 0;
   width: 50px;
   height: 50px;
