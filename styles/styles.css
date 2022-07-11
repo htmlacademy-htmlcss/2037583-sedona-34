@@ -102,7 +102,11 @@ header {
   outline: none;
 }
 
-.navigation-link:hover,
+.navigation-link:hover {
+  color: #756157;
+  outline: none;
+}
+
 .navigation-link:focus {
   color: #756157;
   outline: none;
@@ -123,7 +127,7 @@ header {
 }
 
 .navigation-link-search {
-  padding: 21px 17px 24px 12px;
+  padding: 21px 17px 24px 6px;
   background-image: url("../images/header/search.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -132,32 +136,29 @@ header {
 .navigation-link-search:hover,
 .navigation-link-search:active,
 .navigation-link-search:focus {
-  opacity: 0.3;
+ opacity: 0.3;
 }
 
 .navigation-link-favorite {
   display: block;
   position: relative;
-  padding: 22px 12px 25px 14px;
+  padding: 22px 12px 22px 14px;
   margin-right: 19px;
-  background-image: url("../images/header/favorite.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .navigation-link-favorite:hover,
 .navigation-link-favorite:active,
 .navigation-link-favorite:focus,
 .navigation-link-favorite:focus-visible {
-  opacity: 0.3;
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 .favorite-counter {
   position: absolute;
   min-width: 20px;
   min-height: 20px;
-  left: 23px;
-  top: 16px;
+  left: 25px;
+  top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,6 +184,7 @@ header {
 
 .navigation-link-user:hover {
   background-color: #615048;
+  color: #ffffff;
 }
 
 .navigation-link-user:focus {
@@ -318,6 +320,10 @@ header {
   color: #333333;
 }
 
+.advantages-description-white {
+  color: #ffffff;
+}
+
 .advantages-item-house {
   background-image: url("../images/advantages/house.svg");
   background-repeat: no-repeat;
@@ -401,7 +407,11 @@ header {
   border: none;
 }
 
-.search-button:hover,
+.search-button:hover {
+  background-color: #615048;
+  cursor: pointer;
+}
+
 .search-button:focus {
   background-color: #615048;
 }
@@ -1242,6 +1252,7 @@ input[type="number"]:focus {
 
 .control-input[type="checkbox"]+.control-mark:hover {
   background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .control-input[type="checkbox"]+.control-mark:focus {
@@ -1255,6 +1266,7 @@ input[type="number"]:focus {
 
 .control-input[type="checkbox"]+.control-mark:active {
   background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
 .control-input[type="radio"]+.control-mark {
@@ -1270,6 +1282,10 @@ input[type="number"]:focus {
   background-color: #3f5e72;
   border-radius: 50%;
   content: "";
+}
+
+.control-input[type="radio"]+.control-mark:hover {
+  cursor: pointer;
 }
 
 .control-input[type="radio"]+.control-mark:focus {
@@ -1400,7 +1416,12 @@ input[type="number"]:focus {
   appearance: none;
 }
 
-.select-control:hover,
+.select-control:hover {
+  border-color: #68a2ca;
+  outline: none;
+  cursor: pointer;
+}
+
 .select-control:focus,
 .select-control:focus-visible {
   border-color: #68a2ca;
@@ -1754,7 +1775,12 @@ input[type="number"]:focus {
   appearance: none;
 }
 
-.hotel-in-page-select:hover,
+.hotel-in-page-select:hover {
+  border: 2px solid #68a2ca;
+  outline: none;
+  cursor: pointer;
+}
+
 .hotel-in-page-select:focus,
 .hotel-in-page-select:focus-visible {
   border: 2px solid #68a2ca;
