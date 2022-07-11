@@ -136,7 +136,7 @@ header {
 .navigation-link-search:hover,
 .navigation-link-search:active,
 .navigation-link-search:focus {
- opacity: 0.3;
+  opacity: 0.3;
 }
 
 .navigation-link-favorite {
@@ -530,11 +530,18 @@ header {
 }
 
 .button-social-vk {
-  padding-right: 27px;
+  padding: 12px 11px 12px 11px;
+  border: 1px solid transparent;
 }
 
 .button-social-telegram {
-  padding-right: 27px;
+  padding: 11px 13px 11px 13px;
+  border: 1px solid transparent;
+}
+
+.button-social-utube {
+  padding: 10px 13px 10px 13px;
+  border: 1px solid transparent;
 }
 
 .button-social:hover {
@@ -549,15 +556,20 @@ header {
   fill: #68a2ca;
 }
 
+.button-social:focus-visible {
+  fill: #68a2ca;
+}
+
 .footer-social-list {
   display: flex;
   margin: 0;
+  margin-right: 13px;
   padding: 0;
   list-style-type: none;
 }
 
 .first-social {
-  padding-left: 82px;
+  margin-left: 70px;
 }
 
 .footer-social-item {
@@ -1339,17 +1351,19 @@ input[type="number"]:focus {
 }
 
 .button-reset {
+  font-weight: 400;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 10px 8px 13px;
+  margin-top: 17px;
+  padding: 3px 10px 3px 13px;
   align-items: center;
-  margin-left: 70px;
-  width: 160px;
-  min-height: 48px;
-  font-weight: 400;
+  margin-left: 102px;
+  min-height: 26px;
+  width: 100px;
   justify-content: end;
   background: transparent;
-  border: none;
+  border: 3px solid transparent;
+  border-radius: 4px;
 }
 
 .button-reset:hover {
@@ -1358,8 +1372,7 @@ input[type="number"]:focus {
 
 .button-reset:focus,
 .button-reset:focus-visible {
-  justify-content: center;
-  border: 3px solid #83b3d3;
+  border-color: #83b3d3;
   border-radius: 4px;
   outline: none;
 }
