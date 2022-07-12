@@ -552,10 +552,6 @@ img {
   fill: #68a2ca;
 }
 
-.button-social:active {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
 .button-social:focus {
   fill: #68a2ca;
 }
@@ -563,7 +559,9 @@ img {
 .button-social:focus-visible {
   fill: #68a2ca;
 }
-
+.button-social:active .footer-social-logo {
+  fill: rgba(104, 162, 202, 0.3);
+}
 .footer-social-list {
   display: flex;
   margin: 0;
