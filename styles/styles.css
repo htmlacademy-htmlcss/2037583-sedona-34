@@ -1306,7 +1306,9 @@ input[type="number"]:focus {
 .control-input[type="radio"]+.control-mark:focus {
   border: 3px solid #83b3d3;
 }
-
+.control-input:focus + .control-mark {
+  box-shadow: 0 0 0 3px #83b3d3 inset;
+}
 .control-input:disabled+.control-mark {
   background-color: #ffffff;
 }
