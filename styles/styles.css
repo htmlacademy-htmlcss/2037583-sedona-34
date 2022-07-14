@@ -1322,7 +1322,7 @@ input[type="number"]:focus {
 }
 
 .control-input:disabled+.control-mark {
-  background-color: #ffffff;
+  background-color: #acacac;
 }
 
 .button-filter-form {
